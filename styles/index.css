@@ -1,0 +1,92 @@
+/*전체 적용*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*레이아웃*/
+nav {
+  background-color: #2EE193;
+  display: flex; /*flex 옆으로 배열*/
+  justify-content: space-between; /*알아서 간격 멀어져서 화면 맞춤*/
+  height: 40px;
+  padding: 20px;
+  font-size: x-large;
+  color: white;
+
+  top: 0px;
+  position: sticky;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+header {
+  background-color:#8EE47F;
+}
+header > section {
+  color: black;
+  display: flex;
+  font-size: 1rem;
+}
+.header_left, .header_right {
+  margin: 20px;
+  text-align: center;
+}
+.header_left {
+  width: 30%;
+  font-size: 30px;
+}
+.header_right{
+  width: 70%;
+}
+main {
+  background-color: #C7E579;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;  
+}
+main > section {
+  width: 25%;
+  margin: 20px;
+}
+main img {
+  border-radius: 30%;
+}
+footer {
+  background-color:#F3E482;
+  color: black;
+  display: flex;
+  padding:30px;
+  bottom: 0px;
+  position: sticky;
+}
+footer > h2, footer > ul{
+  margin: 10px;
+}
+footer > ul {
+  list-style-type: none;
+}
+
+/*미디어 쿼리, 사이즈가 작아지면 아래 배열로 바꿈.*/
+@media only screen and (max-width:600px){
+  header > section {
+    flex-direction: column;
+    align-items: center;
+  }
+    .header_left, .header_right {
+      width: 80%;
+  }
+    main {
+      flex-direction: column;
+      align-items: center;
+  }
+    main > section {
+      width: 80%; 
+  }
+    footer {
+      display : none;
+   }
+ }
+  
+
