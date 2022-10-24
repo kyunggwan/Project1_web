@@ -1,5 +1,6 @@
 /*전체 적용*/
 *{
+  font-family: 'Jua', sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -13,7 +14,6 @@ nav {
   padding: 20px;
   font-size: x-large;
   color: white;
-
   top: 0px;
   position: sticky;
 }
@@ -39,6 +39,7 @@ header > section {
 }
 .header_right{
   width: 70%;
+  text-align: left;
 }
 main {
   background-color: #C7E579;
